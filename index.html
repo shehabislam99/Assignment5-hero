@@ -24,24 +24,24 @@
   </head>
   <body class="bg-[#f5fff6]">
     <!-- navbar starts here -->
-    <nav class="bg-[#ffffff] flex justify-between items-center mt-5">
-      <div class="flex items-center gap-3 ml-6">
+    <nav class="bg-[#ffffff] flex flex-col md:flex-row  justify-between items-center mt-5">
+      <div class="flex flex-col md:flex-row items-center  gap-3 ml-6">
         <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="" />
         <h2 class="font-bold text-2xl text-[#006747]">
           Emergency <br />
           Service
         </h2>
       </div>
-      <div class="flex mr-15 gap-5">
-        <button class="btn bg-[#41ff6b1a] btn-active rounded-full">
+      <div class="flex flex-col md:flex-row mr-8 gap-5">
+        <button class="font-bold btn bg-[#41ff6b1a] btn-active w-[95px] rounded-full">
           0 <img class="w-6 h-6" src="./assets/heart.png" alt="" />
         </button>
-        <button class="btn btn-active bg-[#41ff6b1a] rounded-full">
+        <button class="w-[90px] font-bold btn btn-active bg-[#41ff6b1a] rounded-full">
           100
           <img class="w-6 h-6" src="./assets/coin.png" alt="" />
         </button>
         <button
-          class="btn w-25 btn-active bg-[#00A63E] text-white rounded-full"
+          class="btn w-[100px] btn-active bg-[#00A63E] text-white rounded-full"
         >
           2 Copy
         </button>
@@ -69,11 +69,11 @@
     </section>
     <!-- grid layout -->
     <section
-      class="parent gap-7 mt-12 border-3 border-green-500 min-h-[200px] flex"
+      class="parent flex flex-col md:flex-row  mt-12 gap-7  "
     >
-      <div class="ml-10 left-div grid grid-cols-3 gap-4 w-[1370px] h-[1140px]">
+      <div class="ml-10 left-div   grid grid-cols-1 md:grid-cols-3  gap-7 ">
         <!-- 1st grid -->
-        <div class="bg-[#ffffff] rounded-xl shadow-lg w-auto">
+        <div class="bg-[#ffffff]   rounded-xl shadow-lg ">
           <div class="mr-8 mt-8 flex justify-between">
             <div class="ml-8 p-3 bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
               <img
@@ -87,7 +87,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">
+            <h2 class="mt-4 font-bold text-[22px]">
               National Emergency Number
             </h2>
             <p class="text-[#5C5C5C] text-[18px]">National Emergency</p>
@@ -99,18 +99,20 @@
                 All
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+           <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 2nd grid -->
-        <div class="bg-[#ffffff] grid-erJonno rounded-xl shadow-lg">
+        <div class="bg-[#ffffff]  grid-erJonno rounded-xl shadow-lg">
           <div class="mr-8 mt-8 flex justify-between rounded-xl">
             <div class="ml-8 p-3 bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
               <img src="./assets/police.png" class="w-[32px] h-[32px]" alt="" />
@@ -120,7 +122,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Police Helpline Number</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Police Helpline Number</h2>
             <p class="text-[#5C5C5C] text-[18px]">Police</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">999</h1>
@@ -130,18 +132,20 @@
                 Police
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+            <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 3rd grid -->
-        <div class="bg-[#ffffff] grid-erJonno rounded-xl shadow-lg">
+        <div class="bg-[#ffffff]  grid-erJonno rounded-xl shadow-lg">
           <div class="mr-8 mt-8 flex justify-between rounded-xl">
             <div class="ml-8 p-3 bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
               <img
@@ -155,7 +159,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Fire Service Number</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Fire Service Number</h2>
             <p class="text-[#5C5C5C] text-[18px]">Fire Service</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">999</h1>
@@ -165,14 +169,16 @@
                 Fire
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+            <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 4th grid -->
@@ -190,7 +196,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Ambulance Service</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Ambulance Service</h2>
             <p class="text-[#5C5C5C] text-[18px]">Ambulance</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">1994-999999</h1>
@@ -200,14 +206,16 @@
                 Health
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+          <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 5th grid -->
@@ -225,7 +233,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Women & Child Helpline</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Women & Child Helpline</h2>
             <p class="text-[#5C5C5C] text-[18px]">Women & Child Helpline</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">109</h1>
@@ -235,14 +243,16 @@
                 Help
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+          <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 6th grid -->
@@ -260,7 +270,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Anti-Corruption Helpline</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Anti-Corruption Helpline</h2>
             <p class="text-[#5C5C5C] text-[18px]">Anti-Corruption</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">106</h1>
@@ -270,14 +280,16 @@
                 Govt.
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+          <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 7th grid -->
@@ -295,7 +307,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Electricity Helpline</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Electricity Helpline</h2>
             <p class="text-[#5C5C5C] text-[18px]">Electricity Outage</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">16216</h1>
@@ -305,14 +317,16 @@
                 Electricity
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+           <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 8th grid -->
@@ -326,7 +340,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">Brac Helpline</h2>
+            <h2 class="mt-4 font-bold text-[22px]">Brac Helpline</h2>
             <p class="text-[#5C5C5C] text-[18px]">Brac</p>
             <div class="my-4">
               <h1 class="font-bold text-[32px]">16445</h1>
@@ -336,14 +350,16 @@
                 NGO
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+           <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
         <!-- 9th grid -->
@@ -361,7 +377,7 @@
             </span>
           </div>
           <div class="ml-8">
-            <h2 class="mt-4 font-bold text-[24px]">
+            <h2 class="mt-4 font-bold text-[22px]">
               Bangladesh Railway Helpline
             </h2>
             <p class="text-[#5C5C5C] text-[18px]">Bangladesh Railway</p>
@@ -373,22 +389,24 @@
                 Travel
               </p>
             </div>
-            <button class="mt-4 w-[150px] rounded-lg btn">
+           <div class="flex ">
+             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
               <span><i class="fa-regular fa-copy"></i></span>Copy
             </button>
             <button
-              class="mt-4 w-[150px] text-white rounded-lg bg-[#00a63e] btn"
+              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
+           </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="right-div border-3 border-blue-500 bg-[#ffffff] rounded-xl w-[400px] h-[1140px]"
+      </div>
+       <div class="right-div bg-[#ffffff] rounded-xl md:w-[400px] h-[1140px]"
       >
-        <div class="ml-4 mr-4 flex justify-between">
+        <div class="ml-4 mr-4 flex flex-col md:flex-row justify-between  ">
           <div class="flex mt-4">
             <img
               src="./assets/history-icon.png"
