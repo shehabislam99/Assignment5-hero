@@ -33,17 +33,15 @@
         </h1>
       </div>
       <div class="flex flex-col md:flex-row mr-8 gap-5">
-        <button class="font-bold btn bg-[#41ff6b1a] btn-active w-[95px] rounded-full">
-          0 <img class="w-6 h-6" src="./assets/heart.png" alt="" />
+        <button  class="font-bold btn bg-[#41ff6b1a] btn-active w-[95px] rounded-full">
+          <span id="LoveCount">0</span> <img class="w-6 h-6" src="./assets/heart.png" alt="" />
         </button>
         <button class="w-[90px] font-bold btn btn-active bg-[#41ff6b1a] rounded-full">
-          100
+          <span id="coinCount">100</span>
           <img class="w-6 h-6" src="./assets/coin.png" alt="" />
         </button>
-        <button
-          class="inter btn w-[100px] btn-active bg-[#00A63E] text-white rounded-full"
-        >
-          2 Copy
+        <button class="inter btn w-[100px] btn-active bg-[#00A63E] text-white rounded-full">
+          <span id="copyCount">0</span>Copy
         </button>
       </div>
     </nav>
@@ -69,9 +67,9 @@
     </section>
     <!-- grid layout -->
     <section
-      class="parent flex flex-col md:flex-row  mt-12 gap-7  "
+      class="parent flex flex-col md:flex-row  mt-12  gap-7"
     >
-      <div class="ml-10 left-div   grid grid-cols-1 md:grid-cols-3  gap-7 ">
+      <div class="ml-10 left-div   grid grid-cols-1 md:grid-cols-3  gap-6">
         <!-- 1st grid -->
         <div class="bg-[#ffffff]   rounded-xl shadow-lg ">
           <div class="mr-8 mt-8 flex justify-between">
@@ -82,9 +80,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
-              <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
-            </span>
+            <button class="LoveCnt mt-4"><i class=" h-[24px] w-[24px] fa-regular fa-heart"></i></button>
           </div>
           <div class="ml-8">
             <h2 class="hind-madurai mt-4 font-bold text-[22px]">
@@ -93,18 +89,15 @@
             <p class="roboto text-[#5C5C5C] text-[18px]">National Emergency</p>
             <div class="my-4">
               <h1 class="roboto font-bold text-[32px]">999</h1>
-              <p
-                class="hind-madurai bg-[#f2f2f2] w-[53px] h-[37px] p-1 rounded-2xl text-center text-[#5C5C5C] text-[18px]"
-              >
+              <p class="hind-madurai bg-[#f2f2f2] w-[53px] h-[37px] p-1 rounded-2xl text-center text-[#5C5C5C] text-[18px]">
                 All
               </p>
             </div>
            <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="National Emergency Number" data-number="999" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
               <span><i class="fa-solid fa-phone"></i></span>Call
             </button>
@@ -117,7 +110,7 @@
             <div class="ml-8 p-3 bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
               <img src="./assets/police.png" class="w-[32px] h-[32px]" alt="" />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -133,13 +126,12 @@
               </p>
             </div>
             <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Police Helpline Number" data-number="999" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -154,8 +146,8 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
-              <i class="h-[24px] w-[24px] fa-regular fa-heaml-8rt"></i>
+             <span class="LoveCnt mt-4">
+              <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
           <div class="ml-8">
@@ -169,14 +161,13 @@
                 Fire
               </p>
             </div>
-            <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+               <div class="roboto flex ">
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Fire Service Number" data-number="999" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -191,7 +182,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -206,14 +197,13 @@
                 Health
               </p>
             </div>
-          <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+            <div class="roboto flex ">
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Ambulance Service" data-number="1994-999999" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -228,7 +218,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -244,13 +234,12 @@
               </p>
             </div>
           <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Women & Child Helpline" data-number="109" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -265,7 +254,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -281,13 +270,12 @@
               </p>
             </div>
           <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Anti-Corruption Helpline" data-number="106" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -302,7 +290,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -318,13 +306,12 @@
               </p>
             </div>
            <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Electricity Helpline" data-number="16216" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -335,7 +322,7 @@
             <div class="ml-8 p-3 bg-[#FFE3E2] w-[60px] h-[60px] rounded-2xl">
               <img src="./assets/brac.png" class="w-[32px] h-[32px]" alt="" />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -351,13 +338,12 @@
               </p>
             </div>
            <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Brac Helpline" data-number="16445" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -372,7 +358,7 @@
                 alt=""
               />
             </div>
-            <span class="mt-4">
+            <span class="LoveCnt mt-4">
               <i class="h-[24px] w-[24px] fa-regular fa-heart"></i>
             </span>
           </div>
@@ -390,13 +376,12 @@
               </p>
             </div>
            <div class="roboto flex ">
-             <button class="mt-4 mr-3 w-[130px] rounded-lg btn">
-              <span><i class="fa-regular fa-copy"></i></span>Copy
+             <button data-number="999"  class="copy-btn mt-4 mr-3 w-[130px] rounded-lg btn">
+              <i class="fa-regular fa-copy"></i>Copy
             </button>
-            <button
-              class="mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
+            <button data-service="Bangladesh Railway Helpline" data-number="163" class="call-btn mt-4 mr-3 w-[130px] text-white rounded-lg bg-[#00a63e] btn"
             >
-              <span><i class="fa-solid fa-phone"></i></span>Call
+              <span><i class=" fa-solid fa-phone"></i></span>Call
             </button>
            </div>
           </div>
@@ -406,7 +391,7 @@
       </div>
        <div class="right-div bg-[#ffffff] rounded-xl md:w-[400px] h-[1140px]"
       >
-        <div class="ml-4 mr-4 flex flex-col md:flex-row justify-between  ">
+        <div class="ml-4 mr-3 flex flex-col md:flex-row justify-between  ">
           <div class="flex mt-4">
             <img
               src="./assets/history-icon.png"
@@ -415,56 +400,79 @@
             />
             <h3 class="roboto ml-1 font-bold">Call History</h3>
           </div>
-          <button
+          
+          <button  id="clearHistory"
             class="inter font-semibold text-white mt-3 btn btn-active rounded-full bg-[#00a63e]"
           >
             Clear
           </button>
         </div>
+        <ul id="callHistoryList">
+        <div class="ml-4 mr-4 flex my-6 justify-between">
+        <div> 
+            <h3 class="inter font-bold">National Emergency Number</h3>
+            <p class="hind-madurai text-[#5C5C5C]">999</p>
+          </div>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
+        </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
-            <h3 class="inter font-bold">Fire Service Number</h3>
-            <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
+            <h3 class="inter font-bold">Police Helpline Number</h3>
+            <p class="hind-madurai text-[#5C5C5C]">999</p>
           </div>
           <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
         </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
             <h3 class="inter font-bold">Fire Service Number</h3>
+            <p class="hind-madurai text-[#5C5C5C]">999</p>
+          </div>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
+        </div>
+        <div class="ml-4 mr-4 flex my-6 justify-between">
+          <div>
+            <h3 class="inter font-bold">Ambulance Service</h3>
             <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
           </div>
           <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
         </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
-            <h3 class="inter font-bold">Fire Service Number</h3>
-            <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
+            <h3 class="inter font-bold">Women & Child Helpline</h3>
+            <p class="hind-madurai text-[#5C5C5C]">109</p>
           </div>
           <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
         </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
-            <h3 class="inter font-bold">Fire Service Number</h3>
-            <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
+            <h3 class="inter font-bold">Anti-Corruption Helpline</h3>
+            <p class="hind-madurai text-[#5C5C5C]">106</p>
           </div>
-          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p> 
         </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
-            <h3 class="inter font-bold">Fire Service Number</h3>
-            <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
+            <h3 class="inter font-bold">Electricity Helpline</h3>
+            <p class="hind-madurai text-[#5C5C5C]">16216</p>
           </div>
-          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p> 
         </div>
         <div class="ml-4 mr-4 flex my-6 justify-between">
           <div>
-            <h3 class="inter font-bold">Fire Service Number</h3>
-            <p class="hind-madurai text-[#5C5C5C]">1994-999999</p>
+            <h3 class="inter font-bold">Brac Helpline</h3>
+            <p class="hind-madurai text-[#5C5C5C]">16445</p>
           </div>
-          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p> 
         </div>
-    </section>
-
+        <div class="ml-4 mr-4 flex my-6 justify-between">
+          <div>
+            <h3 class="inter font-bold">Bangladesh Railway Helpline</h3>
+            <p class="hind-madurai text-[#5C5C5C]">163</p>
+          </div>
+          <p class="hind-madurai font-semibold mt-4">11:36:58 AM</p> 
+        </div>
+        </ul>
+       
     <!-- js file script connect-->
     <script src="./script.js"></script>
   </body>
