@@ -1,165 +1,79 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+Ans:
+Difference Between getElementById, getElementsByClassName and querySelector/querySelectorAll
 
-### 📅 No Deadline For 50 marks
+(i)getElementById
+Its find out just one element and return one element otherwise return null.When we need just one element then we use getElementById.
+e.g:- const FindValue = document.getElementById('Value');
 
-### 📅 Deadline For 30 marks: Any time after 29th August.
+(ii)getElementsByClassName
+Its find out Multiple element using specific class name and return.When we need multiple element then we use getElementsByClassName.
+e.g:- const digitElements = document.getElementsByClassName('digit');
 
----
+(iii)querySelector/querySelectorll
+Its find out large element using specified css selector and return.When we need more flexibility from other class or id then we use querySelector.
+e.g:- const listItems= document.querySelector('#list');
+const listItems = document.querySelectorAll('.item');
 
-## ✅ Main Requirements (50 Marks)
+2.How do you create and insert a new element into the DOM?
 
-### 1. Navbar
+Ans:
+(i) Creating the Element Document Object Model (DOM) in JavaScript: Creating an element this attribute document.createElement().This method takes a string representing the tag name of the element and creat(div, p etc).
+e.g:- const TextP = document.createElement("p");
 
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
+newTextP.id = "myTextP ";
 
----
+newTextP.textContent = "This is a new element.";
 
-### 2. Hero Section
+newTextP.classList.add("my-class");
 
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
+(ii) Inserting the Element Document Object Model (DOM) in JavaScript : Several methods can be used to insert the newly created element into DOM.
 
----
+e.g:- const newParagraph = document.createElement("p");
 
-### 2. Main Section
+newParagraph.textContent = "This paragraph was added dynamically!";
 
-This Section will have layout as figma
+newParagraph.style.color = "blue";
 
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
+const bodyElement = document.body;
 
-### Emergency Hotline Section
+bodyElement.appendChild(newParagraph);
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
+3.What is Event Bubbling and how does it work?
 
-### History Section
+Ans:
+Event bubbling is a concept in JavaScript that describe how to events propagate or "bubble up" through the Document Object Model (DOM) hierarchy. when an event triggered ona DOM element,that event doesn't just stay on that element.It can "bubble up" through its parent elements and all the way to the root of the document.
 
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+Its works, if we click a button within a id, the click event will first be handled by the button.Due to event bubbling,that event doesn't stop at the button.Its bubble up to the parent div wirh the id and then uo to the body element,and so on,untill it reaches the root element of the documnt.
 
----
+e.g:- <div id="parent">
+<button id="child">Click me</button>
 
-### 3. Responsiveness (5 Marks)
+</div>
 
-- Website should be fully **responsive for mobile devices** (implementation up to you)
+4.What is Event Delegation in JavaScript? Why is it useful?
 
----
+Ans:
+Event delegation is a design pattern which a single event listener is attached to a common ancestor,rather than attaching listener to multiple individual element. Event delegation allows a parent element to listen for events that happen on its child elements, even if those child elements are added dynamically after the initial event listener is attached.
 
-## Functionalities
+It is useful Because
+(i)Efficiency
+Managing event listeners becomes much easier just we need to handle events at the parent level, making our code more maintainable and less error-prone.
+(ii)Dynamism
+Event delegation is particularly useful when dealing with dynamically added elements, as the parent's event listener will automatically handle events from any new child elements without needing additional code.
 
-### 4. Heart Icons
+5.What is the difference between preventDefault and stopPropagation?
 
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
+Ans:
+(i)preventDefault()
+preventDefault is use for stop the browser's built-in brhavior for a specific event.Its can be used to prevent a form from being submitted.
 
----
+e.g:-document.querySelector('form').addEventListener('submit', function (event) {
+event.preventDefault(); });
 
-### 5. Call Buttons
+(ii)stopPropagation()
+stopPropagation is use for stop the event from"bubbling" through the DOM hierarchy.Its useful when you want to handle an event at a specific level and do not want it to trigger handlers on parent elements.
 
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+e.g:- document.querySelector('.child').addEventListener('click', function (event) {
+event.stopPropagation(); });
